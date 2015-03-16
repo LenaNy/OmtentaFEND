@@ -7,10 +7,19 @@ color: red;
 }
 
 
-#personTable tr td {
-width: 200px;
+#personTable {
+tr{
+td.inputbox{
+
+width:200px;
+                 }
+
+td{
+width: 100px;
 padding-right: 5px;
+}}
 }
+
 
 .doNotShow {
 display: none;
