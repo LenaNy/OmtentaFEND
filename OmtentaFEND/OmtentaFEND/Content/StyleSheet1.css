@@ -1,0 +1,26 @@
+﻿.success {
+  color: green; }
+
+.error {
+  color: red; }
+
+#personTable tr td {
+  width: 200px;
+  padding-right: 5px; }
+
+.doNotShow {
+  display: none; }
+
+.doShow {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 500px; }
+
+.showPerson {
+  width: 400px;
+  min-height: 200px;
+  border: 2px solid black;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px; }

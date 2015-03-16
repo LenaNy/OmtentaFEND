@@ -1,0 +1,27 @@
+﻿<br />
+<div class="input-group">
+    <form name="newForm" novalidate>
+        <table id="personTable">
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" id="emailTB" name="email" placeholder="Email" class="form-control" data-ng-model="Person.email" required /></td>
+                <td>
+                    <div class="error" ng-show="newForm.email.$dirty && newForm.email.$invalid">
+                        <small class="error" ng-show="newForm.email.$error.required">
+                            Your Email is required.
+                        </small>
+                        <small class="error"
+                               ng-show="newForm.email.$error.email">
+                            That is not a valid email. Please input a valid email.
+                        </small>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" ng-click="SaveNewEntry()" class="btn btn-success">Save Person</button></td>
+                <td colspan="2"><div id="message"></div></td>
+            </tr>
+        </table>
+    </form>
+</div>
